@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001e4d;
+}
+
+.app {
+    width: 38%;
+    margin: 12rem auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.app h1 {
+    padding-bottom: 4px;
+    font-size: 28px;
+    color: #001e4d;
+}
+
+#question {
+    padding: 1rem 0;
+}
+
+#answer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: start;
+    border-radius: 6px;
+    background: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1.5px solid grey;
+    cursor: pointer;
+
+}
+
+.btn:hover:not([disabled]) {
+    background-color: black;
+    color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-button {
+    background-color: #001e4d;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto 5px;
+    width: 20%;
+    display: none;
+
+}
+
+#next-button:hover {
+    background-color: #044cbf;
+}
+
+.correct {
+    background: rgb(113, 238, 113);
+}
+.incorrect {
+    background: rgb(210, 46, 46);
+}
+@media screen and (max-width: 900px) {
+    .app {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .app {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .app {
+        width: 95%;
+
+    }
+    #next-button {
+        width: 50%;
+    }
+}
